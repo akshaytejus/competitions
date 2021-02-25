@@ -25,13 +25,10 @@ l=0
 for i in range(carsno):
     arr2.append(fyl.readline())
     x=arr2[i].split()
-    print(x)
-    '''cars.update({"cars"+str(l):[]})
-    for k in x:
-        cars["cars"+l.append(k)]
-    l=l+1'''
+    cars.update({"cars"+str(l):x})
+    l=l+1
 
-
+print(cars)
 
         
 
