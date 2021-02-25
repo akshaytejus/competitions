@@ -10,15 +10,24 @@ for i in range(len(arr)):
 
 streetno=arr[2]
 arr1=[]
-dict1={}
+streets={}
 for i in range(streetno):
       arr1.append(fyl.readline())
       x=arr1[i].split()
-      dict1.update({x[2]:[x[0],x[1],x[3]]})
+      streets.update({x[2]:[x[0],x[1],x[3]]})
 
-print(dict1)
 
-cars=arr[3]
+
+carsno=arr[3]
+arr2=[]
+cars={}
+x=0
+for i in range(carsno):
+    arr2.append(fyl.readline())
+    x=arr2[i].split()
+    str(x)
+    cars.update()
+
 
 
 
