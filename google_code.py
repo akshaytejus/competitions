@@ -21,13 +21,19 @@ for i in range(streetno):
 carsno=arr[3]
 arr2=[]
 cars={}
-x=0
+l=0
 for i in range(carsno):
     arr2.append(fyl.readline())
     x=arr2[i].split()
-    str(x)
-    cars.update()
+    print(x)
+    '''cars.update({"cars"+str(l):[]})
+    for k in x:
+        cars["cars"+l.append(k)]
+    l=l+1'''
 
+
+
+        
 
 
 
