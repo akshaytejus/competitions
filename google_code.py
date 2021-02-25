@@ -6,8 +6,13 @@ for i in range(len(arr)):
      x= int(arr[i])
      arr[i]=x
     
-for x in arr:
-    print(x)
 
-streetno=arr[]
+
+streetno=arr[2]
+arr1=[]
+for i in range(streetno):
+      arr1.append(fyl.readline())
+
+for x in arr1:
+    print(x)
 
