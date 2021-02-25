@@ -18,4 +18,7 @@ for i in range(streetno):
 
 print(dict1)
 
+cars=arr[3]
+
+
 
