@@ -13,6 +13,5 @@ arr1=[]
 for i in range(streetno):
       arr1.append(fyl.readline())
 
-for x in arr1:
-    print(x)
+
 
