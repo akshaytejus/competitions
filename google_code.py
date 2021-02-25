@@ -10,9 +10,10 @@ for i in range(len(arr)):
 
 streetno=arr[2]
 arr1=[]
+dict1={}
 for i in range(streetno):
       arr1.append(fyl.readline())
-      
+          
 
 
 
