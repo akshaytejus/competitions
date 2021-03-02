@@ -1,8 +1,10 @@
 import socket
-
+import tkinter as tk
+window = tk.Tk()
 HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
 PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
-
+greeting = tk.Label(text="Hello, Tkinter")
+greeting.pack()
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
@@ -14,3 +16,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
+
+greeting.mainloop()
