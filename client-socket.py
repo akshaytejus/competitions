@@ -1,14 +1,17 @@
-import socket
-import tkinter as tk
-window = tk.Tk()
-HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 65432        # The port used by the server
-
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
-    s.sendall(b'Hello, world')
-    data = s.recv(1024)
-greeting = tk.Label(text="Hello, Tkinter")
-greeting.pack()
-print('Received', repr(data))
-greeting.mainloop()
+# Import socket module  
+import socket              
+  
+# Create a socket object  
+s = socket.socket()          
+  
+# Define the port on which you want to connect  
+port = 12345                
+  
+# connect to the server on local computer  
+s.connect(('127.0.0.1', port))  
+  
+# receive data from the server  
+print (s.recv(1024).decode() ) 
+# close the connection  
+s.close()      
+      
