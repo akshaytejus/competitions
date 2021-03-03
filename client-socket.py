@@ -8,11 +8,10 @@ s = socket.socket()
 port = 12345                
   
 # connect to the server on local computer  
-s.connect(('ec2-3-141-64-224.us-east-2.compute.amazonaws.com', port))  
+s.connect(('ec2-3-133-42-67.us-east-2.compute.amazonaws.com', port))  
   
 # receive data from the server  
-print (s.recv(1024).decode() ) 
+print (s.recv(1024).decode()) 
 # close the connection  
-s.send(bytes('Thank you for connecting','utf-8'))
+s.send(bytes("from nithin","utf-8"))
 s.close()      
-      
